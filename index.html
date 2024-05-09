@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Input Types and Attributes</title>
+  <style>
+    /* Basic styling for improved readability */
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="url"],
+    input[type="date"],
+    input[type="time"],
+    textarea {
+      width: 200px;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Input Types and Attributes</h1>
+
+  <h2>Text Input</h2>
+  <form>
+    <label for="text">Text (with placeholder):</label>
+    <input type="text" id="text" name="text" placeholder="Enter some text here">
+    <br>
+
+    <label for="email">Email (with maximum length):</label>
+    <input type="email" id="email" name="email" maxlength="50" placeholder="Enter your email">
+    <br>
+
+    <label for="number">Number (with minimum and maximum values):</label>
+    <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter a number between 1 and 100">
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+    <br>
+
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" placeholder="Enter a website URL">
+    <br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <br>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time">
+    <br>
+  </form>
+
+  <h2>Text Areas</h2>
+  <form>
+    <label for="message">Message (with minimum length):</label>
+    <textarea id="message" name="message" rows="5" cols="30" minlength="10" placeholder="Write a message (minimum 10 characters)"></textarea>
+    <br>
+  </form>
+
+  <h2>Selection Controls</h2>
+  <form>
+    <label for="gender">Gender:</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+
+    <label for="hobbies">Hobbies (multiple selection):</label>
+    <br>
+    <input type="checkbox" id="reading" name="hobbies[]" value="reading">
+    <label for="reading">Reading</label>
+    <br>
+    <input type="checkbox" id="movies" name="hobbies[]" value="movies">
+    <label for="movies">Watching Movies</label>
+    <br>
+    <input type="checkbox" id="sports" name="hobbies[]" value="sports">
+    <label for="sports">Playing Sports</label>
+    <br>
+
+    <label for="file">File Upload (multiple files accepted):</label>
+    <input type="file" id="file" name="file[]" multiple>
+    <br>
+  </form>
+
+  <h2>Submit and Reset Buttons</h2>
+  <form>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
